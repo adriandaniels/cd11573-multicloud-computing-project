@@ -1,5 +1,4 @@
 data "azurerm_resource_group" "udacity" {
-  # name     = "Regroup_4gKqrgD_cn"
   name       = "cloud-shell-storage-eastus"
 }
 
@@ -34,8 +33,8 @@ resource "azurerm_container_group" "udacity" {
 
 # Addition: Microsoft SQL Server
 
- resource "azurerm_resource_group" "example" {
-  name     = "database-rg"
+resource "azurerm_resource_group" "example" {
+  name     = "example-resources"
   location = "West Europe"
 }
 
@@ -59,11 +58,6 @@ resource "azurerm_mssql_server" "example" {
 }
 
 # Addition: .NET Application
-
-resource "azurerm_resource_group" "example" {
-  name     = "example-resources"
-  location = "West Europe"
-}
 
 resource "azurerm_log_analytics_workspace" "example" {
   name                = "acctest-01"
