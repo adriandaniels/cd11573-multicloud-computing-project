@@ -48,7 +48,7 @@ resource "azurerm_mssql_server" "example" {
 }
 
 resource "azurerm_mssql_database" "example" {
-  name         = "example-db"
+  name         = "adaniels-db"
   server_id    = azurerm_mssql_server.example.id
   collation    = "SQL_Latin1_General_CP1_CI_AS"
   license_type = "LicenseIncluded"
