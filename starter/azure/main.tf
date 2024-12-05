@@ -3,7 +3,8 @@ data "azurerm_resource_group" "udacity" {
 }
 
 resource "azurerm_container_group" "udacity" {
-  name                = "udacity-continst"
+  # name                = "udacity-continst"
+  name                = "example-resources"
   location            = data.azurerm_resource_group.udacity.location
   resource_group_name = data.azurerm_resource_group.udacity.name
   ip_address_type     = "Public"
