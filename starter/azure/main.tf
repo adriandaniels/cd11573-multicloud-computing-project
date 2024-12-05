@@ -54,7 +54,6 @@ resource "azurerm_mssql_database" "example" {
   license_type = "LicenseIncluded"
   max_size_gb  = 2
   sku_name     = "S0"
-  enclave_type = "VBS"
 
   tags = {
     foo = "bar"
