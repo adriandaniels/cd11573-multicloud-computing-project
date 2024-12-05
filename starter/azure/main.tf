@@ -1,5 +1,5 @@
 data "azurerm_resource_group" "udacity" {
-  name       = "TemporaryRG""
+  name       = "TemporaryRG"
 }
 
 resource "azurerm_container_group" "udacity" {
