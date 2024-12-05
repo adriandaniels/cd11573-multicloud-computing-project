@@ -1,5 +1,6 @@
 data "azurerm_resource_group" "udacity" {
   name       = "cloud-shell-storage-eastus"
+  location   = "canadaeast"
 }
 
 resource "azurerm_container_group" "udacity" {

@@ -207,7 +207,7 @@ variable "app_count" {
 # Addition: S3 Bucket
 
 resource "aws_s3_bucket" "example" {
-  bucket = "my-tf-test-bucket"
+  bucket = "my-adaniels-test-bucket"
 
   tags = {
     Name        = "My bucket"
