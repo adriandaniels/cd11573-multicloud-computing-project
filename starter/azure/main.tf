@@ -60,7 +60,7 @@ resource "azurerm_mssql_server" "example" {
 # Addition: .NET Web Application
 
 data "azurerm_windows_web_app" "example" {
-  name                = "New Web Application"
+  name                = "new-web-application"
   resource_group_name = azurerm_resource_group.example.name
 }
 
