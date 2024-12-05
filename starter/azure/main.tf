@@ -59,15 +59,6 @@ resource "azurerm_mssql_server" "example" {
 
 # Addition: .NET Web Application
 
-provider "azurerm" {
-  features {}
-}
-
-resource "azurerm_resource_group" "example" {
-  name     = "example-resources"
-  location = "West Europe"
-}
-
 resource "azurerm_service_plan" "example" {
   name                = "new-service-plan"
   resource_group_name = azurerm_resource_group.example.name
