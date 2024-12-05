@@ -1,5 +1,5 @@
 data "azurerm_resource_group" "udacity" {
-  name       = "cloud-shell-storage-eastus"
+  name       = "TemporaryRG""
 }
 
 resource "azurerm_container_group" "udacity" {
@@ -60,7 +60,7 @@ resource "azurerm_mssql_server" "example" {
 # Addition: .NET Web Application
 
 data "azurerm_windows_web_app" "example" {
-  name                = azurerm_resource_group.example.name
+  name                = "New Web Application"
   resource_group_name = azurerm_resource_group.example.name
 }
 
