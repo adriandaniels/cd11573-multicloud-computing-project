@@ -60,8 +60,8 @@ resource "azurerm_mssql_server" "example" {
 # Addition: .NET Web Application
 
 data "azurerm_windows_web_app" "example" {
-  name                = "existing"
-  resource_group_name = "existing"
+  name                = azurerm_resource_group.example.name
+  resource_group_name = azurerm_resource_group.example.name
 }
 
 output "id" {
